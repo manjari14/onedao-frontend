@@ -1,0 +1,83 @@
+/* OtpVerification.css */
+
+.otp-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.otp-card {
+  display: flex;
+  width: 850px;
+  height: 500px;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.otp-left {
+  flex: 1;
+  background: url("../../public/images/img1.png") no-repeat center center;
+  background-size: cover;
+}
+
+.otp-right {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.otp-inputs input {
+  width: 48px;
+  height: 48px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.otp-inputs input:focus {
+  border-color: #000;
+}
+
+button {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}

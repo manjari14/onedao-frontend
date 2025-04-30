@@ -1,0 +1,64 @@
+/* Dashboard.css */
+
+.dashboard-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../../public/images/img1.png"); /* ✅ Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* White overlay */
+.dashboard-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* white overlay */
+  z-index: 0;
+}
+
+.dashboard-card {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px 50px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.user-info > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.label {
+  font-weight: 500;
+  color: #555;
+}
+
+.value {
+  font-weight: 600;
+  color: #000;
+}
+
+.loading {
+  color: #888;
+}
